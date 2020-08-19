@@ -18,7 +18,7 @@ var connection = mysql.createConnection({
     database: 'mit_db'
 });
 
-router.route('/repository/:userid/:repoid/:status/:score/:tag').get(function(req,res){
+router.route('/:userid/:repoid/:status/:score/:tag').get(function(req,res){
     console.log('success');
     console.log(req);
        
@@ -135,11 +135,8 @@ router.route('/:branch_name/:branch_creator/:branch_rid/:branch_pid/:branch_mess
 
 });
 
-router.route('/file').get(function(req,res){
-    console.log('aaaa');
-    
+router.route('/register').get(function(req,res) {
     res.sendFile(path.join(__dirname,'..', 'views', 'file.html'));
-
 });
 
 

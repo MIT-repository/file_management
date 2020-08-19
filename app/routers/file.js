@@ -69,7 +69,7 @@ router.route('/upload').post(upload.single('myFile'), function(req,res) {
     console.log('upload post');
 
     /* mysql에 파일 경로 저장*/
-    var branch_id = 1;
+    var branch_id = 5;
     connection.query('INSERT INTO file (bid,addr) VALUES(?, ?)',[branch_id, req.file.path], function(err, rows) {
         if (err)
             console.log(err);
@@ -98,8 +98,8 @@ router.route('/upload').post(upload.single('myFile'), function(req,res) {
         
         
 
-        var url = "http://101.101.217.147:8000/tag/"+bucket_name+"/"+req.file.path;
-        //var url = "http://tag:8000/tag/"+bucket_name+"/"+req.file.path;
+        //var url = "http://101.101.217.147:8000/tag/"+bucket_name+"/"+req.file.path;
+        var url = "http://tag:8000/tag/"+bucket_name+"/"+req.file.path;
         console.log(url);
         request(url, function(err,response,body){
             if (!err && response.statusCode == 200)
@@ -118,9 +118,7 @@ router.route('/upload').post(upload.single('myFile'), function(req,res) {
             else 
                 console.log(err);
         });
-        
-        
-
+    
     })
 
     
