@@ -1,0 +1,8 @@
+﻿2020-08-03 20:02:44> Program: Starting Squirrel Updater: --createShortcut slack.exe -l Desktop,StartMenu
+2020-08-03 20:02:44> ApplyReleasesImpl: About to create shortcuts for slack.exe, rootAppDir C:\Users\hyong\AppData\Local\slack
+2020-08-03 20:02:44> ApplyReleasesImpl: Creating shortcut for slack.exe => C:\Users\hyong\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Slack Technologies Inc.\Slack.lnk
+2020-08-03 20:02:45> ApplyReleasesImpl: About to save shortcut: C:\Users\hyong\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Slack Technologies Inc.\Slack.lnk (target C:\Users\hyong\AppData\Local\slack\slack.exe, workingDir C:\Users\hyong\AppData\Local\slack\app-4.8.0, args , toastActivatorCSLID 9a92da87-49f2-51a4-a2b5-718444efc154)
+2020-08-03 20:02:45> ApplyReleasesImpl: Creating shortcut for slack.exe => C:\Users\hyong\Desktop\Slack.lnk
+2020-08-03 20:02:45> ApplyReleasesImpl: About to save shortcut: C:\Users\hyong\Desktop\Slack.lnk (target C:\Users\hyong\AppData\Local\slack\slack.exe, workingDir C:\Users\hyong\AppData\Local\slack\app-4.8.0, args , toastActivatorCSLID 9a92da87-49f2-51a4-a2b5-718444efc154)
+2020-08-03 20:02:45> ApplyReleasesImpl: Examining Pin: File Explorer.lnk
+2020-08-03 20:02:45> ApplyReleasesImpl: Examining Pin: 카카오톡.lnk

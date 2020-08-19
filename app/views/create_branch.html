@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Repository</title>
+</head>
+<body>
+    <form action="/repo/branch/create" method="post">
+ 
+        <p>Branch Name : 
+            <input type="text" name="branch_name"></input>
+        </p>
+
+        <p>Creator :
+            <input type="text" name="branch_creator"></input>
+        </p>
+
+        <p>Repository ID :
+            <input type="text" name="branch_rid"></input>
+        </p>
+        
+        <p>Parent ID :
+            <input type="text" name="branch_pid"></input>
+        </p>
+
+        <p>Message  :
+            <input type="text" name="branch_message"></input>
+        </p>
+
+        <p><input type="submit" name="submit" value="Registrtaion"></input></p>
+
+
+    </form>
+
+
+    
+   <script type="text/javascript">
+
+      
+
+    function submit() {
+       var form = document.createElement("form");
+
+       form.setAttribute("charset", "UTF-8");
+
+       form.setAttribute("method", "Post");  //Post 방식
+
+       form.setAttribute("action", "/user/create"); //요청 보낼 주소
+
+       var hiddenField = document.createElement("input");
+
+       hiddenField.setAttribute("type", "hidden");
+
+       hiddenField.setAttribute("name", "mName");
+
+       hiddenField.setAttribute("value", mName);
+
+       form.appendChild(hiddenField);
+
+       hiddenField = document.createElement("input");
+
+       hiddenField.setAttribute("type", "hidden");
+       hiddenField.setAttribute("name", "mEmail");
+       hiddenField.setAttribute("value", mEmail);
+
+       form.appendChild(hiddenField);
+
+
+
+       document.body.appendChild(form);
+
+       form.submit();
+
+    }
+
+ </script>
+</body>
+</html>
