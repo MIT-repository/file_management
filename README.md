@@ -9,7 +9,6 @@
 ## 사용법
 ### 도커 사용시
 ```
-디렉토리 시작 home/src/tag/mit-cf/
 docker build -t  .
 docker run -d -p 3000:3000 --name tag tag
 ```
