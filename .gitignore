@@ -8,5 +8,5 @@
 
 
 # docker file 
-/file_management/.dockerignore
-/file_management/dockerfile
+/.dockerignore
+/dockerfile
